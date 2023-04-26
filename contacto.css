@@ -1,0 +1,238 @@
+/* Navbar */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hind Madurai', sans-serif;
+
+}
+body{
+    width: 100%;
+}
+
+a{
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.container1 {
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(rgba(5, 10, 5, 0.80), rgba(90, 40, 90, 0.80)), url(/autos-estacionados-en-un-garage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar1 {
+    width: 100%;
+    margin: auto;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 125px;
+    width: 135px;
+    cursor: pointer;
+    
+    
+}
+
+.navbar1 ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+
+.navbar1 ul li a {
+    text-decoration: none;
+    color: white;
+
+    font-size: 1.1rem;
+}
+
+.navbar1 ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: yellowgreen;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+
+.navbar1 ul li:hover::before {
+    width: 100%;
+}
+
+nav{
+    position: relative;
+}
+
+.wave{
+    width: 100%;
+    position: absolute;
+    top: 70%;
+}
+
+/* Navbar */
+
+/* Contacto */
+
+
+
+.centrar1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 38px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.centrar1 h2{
+    text-align: center;
+    font-size: 42px;
+
+}
+
+/* comienzo del contenedor 2 */
+
+.container2{
+    width: 100%;
+    display: flex;
+    margin-top: 3%;
+
+}
+
+.formulario{
+    width: 40%;
+
+
+}
+
+.ubicacion{
+    width: 40%;
+    text-align: center;
+    
+}
+
+.otros i{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.redes a{
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    
+}
+
+.boton1 button{
+    height: 50px;
+    background: blueviolet;
+    transition: background .15s ease-in-out;
+    border-radius: 30px;
+    
+}
+
+.boton1 button:hover{
+    background: rgba(90, 40, 90, 0.80);
+}
+
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+    
+
+@media screen and (max-width: 830px){
+    .container2{
+        display: block;
+    }
+
+    .formulario{
+        width: 100%;
+        
+    }
+
+    .ubicacion{
+        width: 100%;
+    }
+
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+
+}
